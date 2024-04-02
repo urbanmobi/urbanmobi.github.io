@@ -7,21 +7,42 @@
     <style>
         body {
             text-align: center;
+            margin: 0; /* Reset default margin */
+            padding: 0; /* Reset default padding */
         }
         h1, h2, h3, h4, h5, h6 {
             text-align: center; /* Center-align headings */
-            margin-left: 20px; /* Add left margin for headings */
-            margin-right: 20px; /* Add right margin for headings */
         }
         p, ul {
             text-align: left; /* Regular alignment for paragraphs and lists */
-            margin-left: 200px; /* Add left margin for paragraphs and lists */
-            margin-right: 200px; /* Add right margin for paragraphs and lists */
+            padding: 0 10px; /* Add padding to paragraphs and lists */
         }
         .back-button {
             position: absolute;
             left: 20px;
             top: 20px;
+            background-color: #5f0099;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #4a0073;
+        }
+        /* Adjustments for mobile devices */
+        @media only screen and (max-width: 600px) {
+            p, ul {
+                margin-left: 10px; /* Adjust left margin for paragraphs and lists */
+                margin-right: 10px; /* Adjust right margin for paragraphs and lists */
+            }
+            .back-button {
+                font-size: 14px; /* Adjust font size for back button */
+                padding: 8px 16px; /* Adjust padding for back button */
+            }
         }
     </style>
 </head>
